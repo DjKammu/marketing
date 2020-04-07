@@ -96,7 +96,7 @@
             </div><!-- /.col -->
           </div>
         </form>
-        <a href="<?php echo base_url() ?>">Login</a><br>
+        <a href="<?php echo base_url('admin') ?>">Login</a><br>
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
 

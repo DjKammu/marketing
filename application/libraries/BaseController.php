@@ -78,9 +78,9 @@ class BaseController extends CI_Controller {
 	function loadThis() {
 		$this->global ['pageTitle'] = 'CodeInsect : Access Denied';
 		
-		$this->load->view ( 'includes/header', $this->global );
+		$this->load->view ( 'admin/includes/header', $this->global );
 		$this->load->view ( 'access' );
-		$this->load->view ( 'includes/footer' );
+		$this->load->view ( 'admin/includes/footer' );
 	}
 	
 	/**
@@ -102,9 +102,9 @@ class BaseController extends CI_Controller {
      */
     function loadViews($viewName = "", $headerInfo = NULL, $pageInfo = NULL, $footerInfo = NULL){
 
-        $this->load->view('includes/header', $headerInfo);
-        $this->load->view($viewName, $pageInfo);
-        $this->load->view('includes/footer', $footerInfo);
+        $this->load->view('admin/includes/header', $headerInfo);
+        $this->load->view('admin/'.$viewName, $pageInfo);
+        $this->load->view('admin/includes/footer', $footerInfo);
     }
 	
 	/**
